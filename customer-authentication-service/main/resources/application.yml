@@ -1,0 +1,26 @@
+# Custom Server Port: 8081
+server:
+  port: 8081
+
+# Swagger Documentation
+# JSON Format: http://localhost:8081/v2/api-docs
+# Swagger UI: http://localhost:8081/swagger-ui.html
+# MyBatis Test: http://localhost:8081/user/findAll
+
+# Spring Boot Configuration
+spring:
+  application:
+    name: customerAuthentication
+
+  # Spring MySQL Datasource
+  datasource:
+    name: customerAuthentication
+    url: jdbc:mysql://localhost:3306/customer_verification?serverTimezone=UTC
+    username: admin
+    password: admin
+
+# MyBatis Configuration
+mybatis:
+  # Config & Mapper Path
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
